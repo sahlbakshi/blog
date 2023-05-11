@@ -1,0 +1,98 @@
+body {
+  color: #222;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  padding: 10px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit
+}
+
+header a.logo {
+  font-weight: bold;
+  color: rgba(0, 0, 255, 0.807);
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+header nav {
+  display: flex;
+  gap: 18px;
+}
+
+div.post {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+div.post div.texts h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+div.post p.info {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  color: #4e4d4dd8;
+}
+
+div.post p.summary {
+  margin: 0;
+  color: #888282c7;
+}
+
+div.post a.author {
+  font-weight: bold;
+}
+
+form.login, form.register {
+  padding-right: 55px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: rgba(248, 248, 248, 0.719);
+}
+
+button {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.807);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
