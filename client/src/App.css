@@ -18,27 +18,33 @@ main {
 
 header {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  justify-content: space-around;
+  margin-bottom: 40px;
   align-items: center;
+  padding: 25px;
+  color: white;
+  background-color: rgb(222, 55, 9);
 }
 
 header a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
 header a.logo {
   font-weight: bold;
-  color: rgba(0, 0, 255, 0.807);
+  color: white;
   font-style: italic;
   font-size: 1.6rem;
 }
 
 header nav {
   display: flex;
-  gap: 18px;
+  gap: 24px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
 }
 
 div.post {
@@ -91,8 +97,13 @@ button {
   display: block;
   padding: 8px;
   border: none;
-  background-color: rgba(0, 0, 255, 0.807);
+  background-color: rgba(9, 41, 222, 0.811);
   color: white;
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+div.post div.texts a {
+  text-decoration: none;
+  color: inherit;
 }

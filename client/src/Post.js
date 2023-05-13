@@ -1,17 +1,24 @@
-export default function Post() {
+import { format } from 'date-fns'
+import {Link} from "react-router-dom"
+
+export default function Post({_id, title, summary, cover, author, content, createdAt}) {
     return(
-        <div className="post">
+      <div className="post">
         <div className="texts">
           <p className="info">
-            <a className="author">Jan Kammerath</a>
-            <time>April 23, 2023</time>
+            <a className="author">{author.username}</a>
+            <time>{format(new Date(createdAt), 'MMM d, yyyy')}</time>
           </p>
-          <h2>Boomer Developers: 10 Lessons I Learned From Them</h2>
-          <p className="summary">I am now in my late 30s and started to learn to code around the age of 12, in 1996. My professional career as a software engineer took off in the early 2000s when I started working for a local software company.</p>
+          <Link to={`/post/${_id}`}>
+            <h2>{title}</h2>
+          </Link>
+          <p className="summary">{summary}</p>
         </div>
-        <div className="image">
-          <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*X-_AvCTBRFyTGXpcz_utlA.png" alt=""></img>
-        </div>
+        <Link to={`/post/${_id}`}>
+          <div className="image">
+            <img src={"http://localhost:4000/" + cover} alt=""></img>
+          </div>
+        </Link>
       </div>
     )
 }
