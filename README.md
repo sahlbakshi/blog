@@ -1,3 +1,5 @@
+## Blogs
+
 Blogs is a full stack blog application built using the MERN stack. Created using React, Node, Express, MongoDB, Mongoose and JWT.
 
 ![Screen Shot 2023-05-15 at 8 35 13 PM](https://github.com/sahlbakshi/blog/assets/86169374/d18cd56e-a287-4b90-9b38-76a1c68a6a72)
